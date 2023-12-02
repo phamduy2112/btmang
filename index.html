@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+</head>
+
+<body>
+  <header>
+    <!-- place navbar here -->
+  </header>
+  <main class="container mt-3 w-50">
+    <form class="border p-3 border-primary">
+      <h3>Mời bạn nhập số nguyên</h3>
+      <p id="chuoi" class="bg-info text-white p-2">Chuỗi của bạn nhập vừa nhập là: </p>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Số nguyên:</label>
+        <input type="number" class="form-control" id="soNguyen">
+        
+      </div>
+      
+      <button type="submit" class="btn btn-primary" id="themmang">Nhập mảng</button>
+      <!-- <button type="submit" class="btn btn-primary" id="tong">Tính tổng các số nguyên dương</button>
+
+      <button type="submit" class="btn btn-primary" id="dem">Đếm số nguyên dương</button>
+      <button type="submit" class="btn btn-primary" id="nhonhat">Tìm số nhỏ nhất</button>
+      <button type="submit" class="btn btn-primary" id="chancuoi">Tìm phần tử cuối chẵn</button>
+      <button type="submit" class="btn btn-primary" id="sosanh">So sánh sô dương và âm</button>
+      <button type="submit" class="btn btn-primary" id="nguyentodautien">Số nguyên tố đầu tiên</button>
+      <button type="submit" class="btn btn-primary" id="sapxep">Sắp xếp tăng dân</button>
+      <button type="submit" class="btn btn-primary" id="songuyen">Đếm số nguyên</button> -->
+      <!-- <p id="kq" class="bg-success text-white p-2 mt-2">Kết quả:</p> -->
+    </form>
+     <div class="accordion" id="accordionPanelsStayOpenExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+            Tính tổng các số nguyên dương
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+          <div class="accordion-body">
+            <strong>Tính tổng các số nguyên dương</strong>
+            <button type="submit" class="btn btn-primary" id="tong">Tính tổng các số nguyên dương</button>
+
+            <p id="kq1" class="bg-success text-white p-2 mt-2">Kết quả:</p>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+            Đếm số nguyên dương
+          </button>
+          
+        </h2>
+       <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+          <div class="accordion-body">
+            <strong>Đếm số nguyên dương</strong>  <br>
+            <button type="submit" class="btn btn-primary" id="dem">Đếm số nguyên dương</button>
+
+            <p id="kq2" class="bg-success text-white p-2 mt-2">Kết quả:</p>
+          </div>
+        </div>
+      </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+            Tìm số nhỏ nhất
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+          <div class="accordion-body">
+            <strong>Tìm số nhỏ nhất</strong> <br>
+
+      <button type="submit" class="btn btn-primary" id="nhonhat">Tìm số nhỏ nhất</button>
+
+            <p id="kq3" class="bg-success text-white p-2 mt-2">Kết quả:</p>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+            Tìm số dương nhỏ nhất
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFour">
+          <div class="accordion-body">
+            <strong>Tìm số dương nhỏ nhất</strong> 
+            <br>
+         
+            <button type="submit" class="btn btn-primary" id="soDuongNhoNhat">Số dương nhỏ nhất</button>
+
+            <p id="kq4" class="bg-success text-white p-2 mt-2">Kết quả:</p> </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="panelsStayOpen-headingFive">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">
+            Tìm phần tử cuối chẵn
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFive">
+          <div class="accordion-body">
+            <strong> Tìm phần tử cuối chẵn</strong><br>
+            <button type="submit" class="btn btn-primary" id="chancuoi">Tìm phần tử cuối chẵn</button>
+
+            <p id="kq5" class="bg-success text-white p-2 mt-2">Kết quả:</p>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="panelsStayOpen-headingSix">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSix" aria-expanded="true" aria-controls="panelsStayOpen-collapseSix">
+            Đổi chỗ
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingSix">
+          <div class="accordion-body">
+            <strong>Đổi chỗ 2 vị trí</strong> 
+            <br>
+            <form class="border p-3 border-primary d-flex">
+              <div class="mb-3 w-50">
+                <label for="exampleInputEmail1" class="form-label">Vị trí 1:</label>
+                <input type="number" class="form-control" id="viTriMot">
+                
+              </div>
+              <div class="mb-3 w-50">
+                <label for="exampleInputEmail1" class="form-label">Vị trí 2:</label>
+                <input type="number" class="form-control" id="viTriHai">
+                
+              </div>
+            </form>
+            <button type="submit" class="btn btn-primary" id="doivitri">Đổi 2 vị trí</button>
+
+            <p id="kq6" class="bg-success text-white p-2 mt-2">Kết quả:</p>
+
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="panelsStayOpen-headingSeven">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSeven" aria-expanded="false" aria-controls="panelsStayOpen-collapseSeven">
+            Sắp xếp tăng dân
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseSeven" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingSeven">
+          <div class="accordion-body">
+            <strong> Sắp xếp tăng dần</strong> <br>
+            <button type="submit" class="btn btn-primary" id="sapxep">Sắp xếp tăng dân</button>
+
+            <p id="kq7" class="bg-success text-white p-2 mt-2">Kết quả:</p>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="panelsStayOpen-headingEight">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseEight" aria-expanded="false" aria-controls="panelsStayOpen-collapseEight">
+            Tìm số nguyên tố đầu
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseEight" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingEight">
+          <div class="accordion-body">
+            <strong>Tìm số nguyên tố đầu.</strong> <br>
+
+            <button type="submit" class="btn btn-primary" id="nguyentodautien">Số nguyên tố đầu tiên</button>
+
+            <p id="kq8" class="bg-success text-white p-2 mt-2">Kết quả:</p>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="panelsStayOpen-headingNine">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseNine" aria-expanded="false" aria-controls="panelsStayOpen-collapseNine">
+            Đếm số nguyên
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseNine" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingNine">
+          <div class="accordion-body">
+            <strong>Đếm số nguyên</strong> <br>
+           <form action="" class="">
+            <p id="chuoiThuc" class="bg-info text-white p-2">Chuỗi của bạn nhập vừa nhập là: </p>
+
+            <div class="mb-3 w-50">
+              <label for="exampleInputEmail1" class="form-label">Mang thuc</label>
+              <input type="number" class="form-control" id="mangThuc">
+              
+            </div>
+            <button type="submit" class="btn btn-primary" id="themMangThuc">Nhập mảng</button>
+
+           </form>
+           <button type="submit" class="btn btn-primary" id="songuyen">Đếm số nguyên</button>
+            <p id="kq9" class="bg-success text-white p-2 mt-2">Kết quả:</p>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="panelsStayOpen-headingTen">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTen" aria-expanded="false" aria-controls="panelsStayOpen-collapseTen">
+            So sánh sô dương và âm
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseTen" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTen">
+          <div class="accordion-body">
+            <strong>So sánh sô dương và âm</strong> <br>
+            <button type="submit" class="btn btn-primary" id="sosanh">So sánh sô dương và âm</button>
+
+            <p id="kq10" class="bg-success text-white p-2 mt-2">Kết quả:</p>
+          </div>
+        </div>
+      </div>
+    </div> 
+  </main>
+
+  <footer>
+    <!-- place footer here -->
+  </footer>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+  <script src="js/index.js"></script>
+</body>
+
+</html>
